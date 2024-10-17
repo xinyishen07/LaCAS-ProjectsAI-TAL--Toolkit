@@ -3,7 +3,6 @@ import pandas as pd
 import subprocess
 import sys
 import requests
-sys.path.insert(0, '/mnt/c/Users/utilisateur/Documents/newvenv/okapi')
 from okapi_api import okapi_login, sparql_search
 
 """
