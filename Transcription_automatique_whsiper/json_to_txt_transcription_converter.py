@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import re
 import sys
-sys.path.insert(0, '/mnt/c/Users/utilisateur/Documents/newvenv/okapi')
 from okapi_api import okapi_login, sparql_search
 """
 Fonction : Ce programme permet de faciliter la correction manuelle des transcriptions en effectuant deux actions :
