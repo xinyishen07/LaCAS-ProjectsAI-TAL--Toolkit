@@ -1,7 +1,7 @@
 # READ ME
 L’objectif de ce programme est d’ajouter des sous-titres aux entretiens sur la plateforme LaCAS, incluant les entretiens PEA, I-DEA et d'autres.
 
-##Le processus comprend trois étapes principales :
+## Le processus comprend trois étapes principales :
 1. Récupération des entretiens : D'abord, la liste des entretiens nécessitant des sous-titres ainsi que leurs informations complémentaires est récupérée via le serveur Okapi de LaCAS. 
 2. Transcription automatique : Ensuite, des transcriptions sont générées à l'aide de Whisper (https://openai.com/index/whisper/ ), un modèle avancé de reconnaissance vocale automatique.
 3. Vérification et importation : Enfin, une vérification manuelle est réalisée par les collègues de LaCAS. Les transcriptions corrigées sont ensuite importées sur la plateforme.
