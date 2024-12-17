@@ -17,3 +17,6 @@ json_to_txt_transcription_converter.py : Ce programme permet de faciliter la cor
 
 new_client_whisper.py : Ce programme permet de réimporter les transcriptions corrigées sur la plateforme LaCAS après les modifications manuelles.
 
+get_transcription_whisper_version_app.py : Ce programme propose une interface utilisateur permettant de transcrire une liste de vidéos provenant du projet LaCAS en utilisant le modèle Whisper et d'importer des transcriptions sur la plateforme LaCAS.
+
+delete_transcription_whisper_version_app.py : Ce programme propose une interface utilisateur permettant de enlever une transcription de vidéo sur LaCAS.
