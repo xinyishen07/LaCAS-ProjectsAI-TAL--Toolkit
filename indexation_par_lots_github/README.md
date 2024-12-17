@@ -42,3 +42,27 @@ Pour plus de détails sur les expériences menées et les résultats obtenus :
 **draw_confusion_matrix.py** : Ce programme génère des matrices de confusion à partir des prédictions des machines et des annotations humaines.
 
 ## Réalisation
+
+Après des expériences, nous avons finalement adopté GPT-4 pour classer automatiquement chaque donnée dans les catégories pertinentes.
+
+### Etapes
+
+**Préparation des données** : 
+Les données de LaCAS sont structurées selon les formalismes du web sémantique (RDF/OWL). Pour extraire les informations, nous identifions les domaines pertinents à classer et récupérons les données de média nécessaires en exécutant des requêtes SPARQL.
+
+**Classification automatique avec GPT-4** : 
+Une fois les données récupérées via SPARQL, elles sont soumises à GPT-4, qui analyse chaque entrée et lui attribue les catégories les plus appropriées.
+
+**Importation des résultats sur LaCAS** : 
+Une fois les données classées automatiquement, elles sont importées et indexées dans LaCAS. Ensuite, grâce au programme d'Okapi, cet article sera automatiquement ajouté dans la colonne Données Liées de chaque terme concerné.
+
+### Programmes concernantes
+
+**indexation_automatique_par_lots.py** : Ce programme permet d’indexer automatiquement des lots sur la plateforme LaCAS en s'appuyant sur le modèle GPT.
+
+**indextation_automatique_par_lots_app.py** : Ce programme propose une interface utilisateur permettant d’indexer automatiquement des lots sur la plateforme LaCAS en s'appuyant sur le modèle GPT.
+
+
+
+
+
