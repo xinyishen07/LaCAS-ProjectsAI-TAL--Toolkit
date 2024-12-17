@@ -11,9 +11,24 @@ from okapi_api import okapi_login,  sparql_search,  get_media, set_media
 sys.path.insert(0, 'C:\\Users\\utilisateur\\Documents\\newvenv\\indexation_par_lot\\okapi') # add okapi folder to the system path
 import json
 import time
+"""
+Fonctionnalités
+Ce programme permet d’indexer automatiquement des lots sur la plateforme LaCAS en s'appuyant sur le modèle GPT.
 
-# TOTAL A INDEXER : 36000
-# TEMPS A FAIRE : 24 heures
+Entrée : 
+- Compte administratif LaCAS : Identifiants nécessaires pour se connecter à la plateforme.
+- Répertoire list_voca : Contient les listes de vocabulaire utilisées pour l’indexation sur LaCAS.
+
+Sortie : 
+- Répertoire 'result_mise_a_jour' :
+    Fichiers CSV au format result_gpt_list_x_mise_a_jour.csv : Chaque fichier contient les informations sur les nouvelles entités de médias indexées sur LaCAS et les vocabulaires associés prédits par GPT.
+    Fichiers TXT au format state_list_x_mise_a_jour.txt : Chaque fichier enregistre la date de la dernière action effectuée (correspondant à la dernière exécution du programme).
+
+- Répertoire 'temp_file_mise_a_jour' : 
+    Fichiers JSON au format temp_file_liste_x.json : Ces fichiers contiennent temporairement les nouvelles données mises à jour lors de l’exécution du programme. Les anciens contenus sont supprimés après chaque action.
+    Fichiers JSON au format temp_liste_x_failed_data.json : Ces fichiers listent temporairement les médias pour lesquels l'importation sur LaCAS a échoué. Leur contenu est également effacé après chaque action.
+"""
+
 openai.api_key = ''
 okapi_url = 'https://lacas.inalco.fr/portals'
 # TODO: Make the information invisible
