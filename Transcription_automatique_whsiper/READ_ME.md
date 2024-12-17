@@ -1,5 +1,5 @@
 # READ ME
-L’objectif de ce programme est d’ajouter des sous-titres aux entretiens sur la plateforme LaCAS, incluant les entretiens PEA, I-DEA et d'autres.
+L’objectif de ces programmes sont d’ajouter des sous-titres aux entretiens sur la plateforme LaCAS, incluant les entretiens PEA, I-DEA et d'autres.
 
 ## Le processus comprend trois étapes principales :
 1. Récupération des entretiens : D'abord, la liste des entretiens nécessitant des sous-titres ainsi que leurs informations complémentaires est récupérée via le serveur Okapi de LaCAS. 
